@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Bangun Datar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #007BFF;
+            margin-top: 20px;
+        }
+        .hasil {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        span {
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menghitung Luas Bangun Datar</h1>
+        <script>
+            // 1. Menghitung Luas Persegi Panjang
+            document.write("<h2>1. Menghitung Luas Persegi Panjang</h2>");
+            document.write("<p>Diketahui:</p>");
+            // Deklarasi Variabel untuk Panjang dan Lebar
+            var panjang = 10; //var nilai bisa diubah
+            var lebar = 15;
+            // Rumus Luas persegi panjang : Luas = Panjang x Lebar
+            const rumusPersegiPanjang = "Panjang × Lebar"; //const tidak bisa diubah (Tetap)
+            // Menghitung Luas Persegi Panjang
+            let luasPersegiPanjang = panjang * lebar; //let nilai bisa diubah
+            // Cetak nilai panjang, lebar, dan rumus
+            document.write("<p>Panjang = " + panjang + " cm</p>");
+            document.write("<p>Lebar = " + lebar + " cm</p>");
+            document.write("<p>Rumus = " + rumusPersegiPanjang + "</p>");
+            // Cetak Hasil Perhitungan Luas Persegi Panjang
+            document.write("<p class='hasil'>Luas Persegi Panjang = " + panjang + " × " + lebar + " = <span>" + luasPersegiPanjang + " cm²</span></p>");
+
+
+            // 2. Menghitung Luas Bujur Sangkar
+            document.write("<h2>2. Menghitung Luas Bujur Sangkar</h2>");
+            document.write("<p>Diketahui:</p>");
+            // Deklarasi Variabel untuk Sisi
+            var sisi = 15; //var nilai bisa diubah
+            // Rumus Luas Bujur Sangkar : Luas = Sisi x Sisi
+            const rumusBujurSangkar = "Sisi × Sisi"; //const tidak bisa diubah (Tetap)
+            // Menghitung Luas Bujur Sangkar
+            let luasBujurSangkar = sisi * sisi; //let nilai bisa diubah
+            // Cetak nilai sisi dan rumus
+            document.write("<p>Sisi = " + sisi + " cm</p>");
+            document.write("<p>Rumus = " + rumusBujurSangkar + "</p>");
+            // Cetak Hasil Perhitungan Luas Bujur Sangkar
+            document.write("<p class='hasil'>Luas Bujur Sangkar = " + sisi + " × " + sisi + " = <span>" + luasBujurSangkar + " cm²</span></p>");
+
+
+            // 3. Menghitung Luas Segitiga
+            document.write("<h2>3. Menghitung Luas Segitiga</h2>");
+            document.write("<p>Diketahui:</p>");
+            // Deklarasi Variabel untuk Alas dan Tinggi
+            var alas = 7; //var nilai bisa diubah
+            var tinggi = 9;
+            // Rumus Luas Segitiga : Luas = (Alas x Tinggi) / 2
+            const rumusSegitiga = "(Alas × Tinggi) / 2";
+            // Menghitung Luas Segitiga
+            let luasSegitiga = (alas * tinggi) / 2; //let nilai bisa diubah
+            // Cetak nilai alas, tinggi, dan rumus
+            document.write("<p>Alas = " + alas + " cm</p>");
+            document.write("<p>Tinggi = " + tinggi + " cm</p>");
+            document.write("<p>Rumus = " + rumusSegitiga + "</p>");
+            // Cetak Hasil Perhitungan Luas Segitiga
+            document.write("<p class='hasil'>Luas Segitiga = (" + alas + " × " + tinggi + ") / 2 = <span>" + luasSegitiga + " cm²</span></p>");
+        </script>
+    </div>
+</body>
+</html>
